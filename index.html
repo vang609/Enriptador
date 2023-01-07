@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-logo">
+        <img src="./images/logo.svg" alt="Alura Logo" />
+      </div>
+      <div class="flex-container">
+        <div class="item-encription">
+          <div class="item-texts">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Ingrese en texto aquí..."
+              onkeyup="this.value=this.value.toLocaleLowerCase();"
+            ></textarea>
+            <div>
+              <img src="./images/exclamation.svg" alt="Exclamation Logo" />
+              <small>Solo letras minúsculas y sin acentos</small>
+            </div>
+          </div>
+          <div class="btns-encription">
+            <button class="encriptar">Encriptar</button>
+            <button class="desencriptar">Desencriptar</button>
+          </div>
+        </div>
+        <div class="item-result">
+          <div class="visible" id="not-found">
+            <img src="./images/muneco.svg" alt="muñeco" />
+            <h4>Ningún mensaje fue encontrado.</h4>
+            <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+          </div>
+          <div class="hidden result" id="result">
+            <p></p>
+            <button class="copy">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Develop by
+      <a
+        href="https://www.linkedin.com/in/g-enrique-vargas-7b0a33258/"
+        target="_blank"
+        >@en-vang</a
+      >
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
