@@ -9,23 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="item-logo">
-        <img src="./images/logo.svg" alt="Alura Logo" />
-      </div>
+      <img class="item-logo"src="./images/logo.svg" alt="Alura Logo"/>
       <div class="flex-container">
         <div class="item-encription">
           <div class="item-texts">
             <textarea
               name="message"
               id="message"
-              placeholder="Ingrese en texto aquí..."
-              onkeyup="this.value=this.value.toLocaleLowerCase();"
-            ></textarea>
-            <div>
-              <img src="./images/exclamation.svg" alt="Exclamation Logo" />
-              <small>Solo letras minúsculas y sin acentos</small>
-            </div>
-          </div>
+              placeholder="Ingrese en texto aquí"
+              onkeyup="this.value=this.value.toLocaleLowerCase();"></textarea>
+              <span><img src="./images/exclamation.svg" alt="Exclamation Logo" />Solo letras minúsculas y sin acentos</span></div>
           <div class="btns-encription">
             <button class="encriptar">Encriptar</button>
             <button class="desencriptar">Desencriptar</button>
@@ -34,8 +27,9 @@
         <div class="item-result">
           <div class="visible" id="not-found">
             <img src="./images/muneco.svg" alt="muñeco" />
-            <h4>Ningún mensaje fue encontrado.</h4>
+            <h2>Ningún mensaje fue encontrado.</h2>
             <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+            <!-- <button>Encriptar</button> -->
           </div>
           <div class="hidden result" id="result">
             <p></p>
@@ -45,14 +39,14 @@
       </div>
     </div>
 
-    <footer>
+    <!-- <footer>
       Develop by
       <a
         href="https://www.linkedin.com/in/g-enrique-vargas-7b0a33258/"
         target="_blank"
         >@en-vang</a
       >
-    </footer>
+    </footer> -->
 
     <script src="./js/main.js"></script>
   </body>

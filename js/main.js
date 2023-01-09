@@ -9,9 +9,9 @@ const notFoundDiv = document.getElementById("not-found");
 const resultEncription = document.getElementById("result");
 
 encriptarBtn.addEventListener("click", () => {
-  console.log("ENCRIPTAR");
-  let msg = msgInput.value.trim();
-
+  console.log("...encrypt");
+  let msg = msgInput.value;
+  console.log({msg});
   if (msg.length === 0) {
     return;
   }
@@ -26,14 +26,13 @@ encriptarBtn.addEventListener("click", () => {
 });
 
 desencriptarBtn.addEventListener("click", () => {
-  console.log("DES - ENCRIPTAR");
-  let msg = msgInput.value.trim();
+  console.log("des-encrypt... ");
+  let msg = msgInput.value;
 
   if (msg.length === 0) {
     return;
   }
-
-  msg = msg.replace(/enter/gi, "e");
+  msg = msg.replace(/\n/gi, "e");
   msg = msg.replace(/imes/gi, "i");
   msg = msg.replace(/ai/gi, "a");
   msg = msg.replace(/ober/gi, "o");
